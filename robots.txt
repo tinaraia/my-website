@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vocal-tapioca-7845ac.netlify.app/sitemap.xml
