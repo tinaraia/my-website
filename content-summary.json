@@ -1,0 +1,98 @@
+{
+  "website": {
+    "title": "Tina Peng - Fractional SaaS Marketing Consultant",
+    "description": "Professional consulting services for B2B SaaS companies seeking expert marketing leadership without full-time commitment",
+    "url": "https://vocal-tapioca-7845ac.netlify.app/",
+    "type": "professional-services-website",
+    "industry": "B2B SaaS Marketing Consulting"
+  },
+  "consultant": {
+    "name": "Tina Peng",
+    "title": "Fractional SaaS Marketing Consultant",
+    "email": "hello@tinapeng.ca",
+    "experience_years": "5+",
+    "geographic_scope": "Worldwide",
+    "business_model": "Fractional consulting (part-time expert leadership)"
+  },
+  "services": {
+    "primary_services": [
+      {
+        "name": "Go-to-Market Strategy",
+        "description": "Launch new products and features with confidence. Strategic planning, positioning, and execution.",
+        "details": [
+          "Strategic planning for product launches",
+          "Market positioning",
+          "Competitive positioning", 
+          "Launch execution",
+          "Feature rollout planning",
+          "Market entry strategies"
+        ]
+      },
+      {
+        "name": "Growth Marketing",
+        "description": "Data-driven strategies to accelerate customer acquisition and retention for sustainable growth.",
+        "details": [
+          "Customer acquisition strategies",
+          "Retention optimization",
+          "Conversion rate optimization",
+          "Marketing funnel analysis",
+          "Performance marketing",
+          "Growth experimentation",
+          "Data analytics and insights"
+        ]
+      },
+      {
+        "name": "Product Marketing", 
+        "description": "Position your product for success with compelling messaging, competitive analysis, and market research.",
+        "details": [
+          "Product positioning",
+          "Messaging development",
+          "Competitive analysis",
+          "Market research",
+          "Customer insights",
+          "Product-market fit optimization",
+          "Pricing strategy",
+          "Feature prioritization guidance"
+        ]
+      }
+    ]
+  },
+  "target_audience": {
+    "primary": "B2B SaaS companies",
+    "characteristics": [
+      "Seeking marketing expertise",
+      "Need growth acceleration", 
+      "Want expert leadership without full-time commitment",
+      "Looking for strategic marketing guidance",
+      "Require go-to-market support"
+    ]
+  },
+  "performance_metrics": {
+    "experience": "5+ years in SaaS marketing",
+    "campaigns": "50+ successful campaigns executed",
+    "growth_results": "200% average growth increase for clients"
+  },
+  "expertise_areas": [
+    "Go-to-Market Strategy",
+    "Growth Marketing",
+    "Product Marketing", 
+    "B2B SaaS Marketing",
+    "Customer Acquisition",
+    "Marketing Leadership",
+    "Strategic Planning",
+    "Product Positioning",
+    "Competitive Analysis",
+    "Market Research",
+    "Customer Growth",
+    "Data-driven Marketing",
+    "Conversion Optimization",
+    "Marketing Funnel Analysis",
+    "Growth Experimentation"
+  ],
+  "value_proposition": "Expert-level marketing leadership for B2B SaaS companies without the cost and commitment of a full-time hire",
+  "contact_information": {
+    "email": "hello@tinapeng.ca",
+    "website": "https://vocal-tapioca-7845ac.netlify.app/",
+    "cta": "Get In Touch for fractional marketing leadership consultation"
+  }
+}
