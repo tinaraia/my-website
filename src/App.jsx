@@ -1,4 +1,5 @@
 import React from 'react'
+import PDFDownload from './components/PDFDownload'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <ul className="hidden md:flex space-x-8" role="menubar">
               <li role="none"><a href="#about" className="text-gray-700 hover:text-gray-900 transition-colors" role="menuitem">About</a></li>
               <li role="none"><a href="#services" className="text-gray-700 hover:text-gray-900 transition-colors" role="menuitem">Services</a></li>
+              <li role="none"><a href="#resources" className="text-gray-700 hover:text-gray-900 transition-colors" role="menuitem">Resources</a></li>
               <li role="none"><a href="#experience" className="text-gray-700 hover:text-gray-900 transition-colors" role="menuitem">Experience</a></li>
               <li role="none"><a href="#contact" className="text-gray-700 hover:text-gray-900 transition-colors" role="menuitem">Contact</a></li>
             </ul>
@@ -120,6 +122,29 @@ function App() {
                 Product Marketing service includes: product positioning, messaging development, competitive analysis, market research, customer insights, product-market fit optimization, pricing strategy, feature prioritization guidance.
               </div>
             </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Lead Magnet Section */}
+      <section id="resources" className="py-20 px-4 sm:px-6 lg:px-8" aria-labelledby="resources-heading">
+        {/* AI-readable resources summary */}
+        <div className="sr-only" data-ai-content="resources-summary">
+          Lead generation resource: Free PDF guide "Your Fractional Fit: The SaaS Leader's Guide to Smarter Marketing Strategy". 
+          Email capture form for lead generation. Downloads trigger email notifications for follow-up.
+        </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 id="resources-heading" className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Free Resources
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              Get actionable insights to accelerate your SaaS marketing strategy
+            </p>
+          </div>
+          
+          <div className="max-w-md mx-auto">
+            <PDFDownload />
           </div>
         </div>
       </section>
