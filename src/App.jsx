@@ -84,7 +84,7 @@ const challenges = [
 const heroProof = [
   { icon: Clock, text: '15+ years in B2B technology marketing' },
   { icon: TrendingUp, text: '$300M+ product portfolios led' },
-  { icon: Award, text: 'UBC MBA' },
+  { icon: Award, text: 'MBA & Senior Marketing Leader' },
   { icon: MapPin, text: 'Vancouver, BC · Pacific Time' },
 ]
 
@@ -124,7 +124,7 @@ const testimonials = [
     name: 'Chang L.',
     company: 'Plenish',
     content:
-      "It's refreshing to work a marketer who excels at both strategy and execution. Tina stays on top of the latest AI tools and trends, and she gave us a tailored, realistic plan that fit our goals and internal capacity perfectly.",
+      "It's refreshing to work with a marketer who excels at both strategy and execution. Tina stays on top of the latest AI tools and trends, and she gave us a tailored, realistic plan that fit our goals and internal capacity perfectly.",
   },
 ]
 
@@ -161,7 +161,7 @@ const aboutParagraphs = [
 const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'services', label: 'Services' },
-  { id: 'resources', label: 'Free Guide' },
+  { id: 'resources', label: 'Free GTM Guide' },
   { id: 'about', label: 'About' },
 ]
 
@@ -382,18 +382,18 @@ function App() {
                 Fractional Marketing Leader
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{ color: INK }}>
-                Go-to-market clarity
+                Go-to-market strategy
                 <span
                   className="text-transparent bg-clip-text"
                   style={{ backgroundImage: GRADIENT, WebkitBackgroundClip: 'text' }}
                 >
                   {' '}
-                  for tech companies
+                  for complex, niche markets
                 </span>
               </h1>
               <p className="mt-6 text-xl leading-relaxed" style={{ color: BODY }}>
-                Fractional marketing leadership for growing companies with complex products, enterprise buyers, and long
-                sales cycles.
+                I help tech companies with complex products, specialized buyers, and long sales cycles sharpen their positioning,
+                messaging, and go-to-market strategy.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <button
@@ -880,7 +880,7 @@ function App() {
               <span className="ml-3 text-xl font-bold">{BRAND}</span>
             </div>
             <p className="mb-6" style={{ color: PINK }}>
-              Fractional Marketing Leader · Positioning and Go-to-Market Strategy
+              Clarify Your Positioning · Sharpen Your Message · Build Your GTM
             </p>
             <div className="flex justify-center space-x-6">
               <a
