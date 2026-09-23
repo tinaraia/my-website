@@ -308,8 +308,8 @@ function App() {
                       onClick={() => scrollToSection(item.id)}
                       className="px-3 py-2 text-sm font-medium transition-colors"
                       style={{ color }}
-                      onMouseEnter={(e) => (e.target.style.color = RED)}
-                      onMouseLeave={(e) => (e.target.style.color = color)}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = RED)}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = color)}
                     >
                       {item.label}
                     </button>
@@ -319,8 +319,8 @@ function App() {
                   onClick={() => scrollToSection('contact')}
                   className="text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
                   style={{ backgroundColor: RED }}
-                  onMouseEnter={(e) => (e.target.style.backgroundColor = DARK_RED)}
-                  onMouseLeave={(e) => (e.target.style.backgroundColor = RED)}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = DARK_RED)}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = RED)}
                 >
                   {CTA_LABEL}
                 </button>
@@ -348,8 +348,8 @@ function App() {
                     onClick={() => scrollToSection(item.id)}
                     className="block px-3 py-2 text-base font-medium transition-colors"
                     style={{ color }}
-                    onMouseEnter={(e) => (e.target.style.color = RED)}
-                    onMouseLeave={(e) => (e.target.style.color = color)}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = RED)}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = color)}
                   >
                     {item.label}
                   </button>
@@ -359,8 +359,8 @@ function App() {
                 onClick={() => scrollToSection('contact')}
                 className="block px-3 py-2 text-base font-medium text-white rounded-lg transition-colors"
                 style={{ backgroundColor: RED }}
-                onMouseEnter={(e) => (e.target.style.backgroundColor = DARK_RED)}
-                onMouseLeave={(e) => (e.target.style.backgroundColor = RED)}
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = DARK_RED)}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = RED)}
               >
                 {CTA_LABEL}
               </button>
@@ -400,8 +400,8 @@ function App() {
                   onClick={() => scrollToSection('contact')}
                   className="text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group"
                   style={{ background: GRADIENT }}
-                  onMouseEnter={(e) => (e.target.style.background = GRADIENT_HOVER)}
-                  onMouseLeave={(e) => (e.target.style.background = GRADIENT)}
+                  onMouseEnter={(e) => (e.currentTarget.style.background = GRADIENT_HOVER)}
+                  onMouseLeave={(e) => (e.currentTarget.style.background = GRADIENT)}
                 >
                   {CTA_LABEL}
                   <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -411,12 +411,12 @@ function App() {
                   className="border-2 px-8 py-4 rounded-lg font-semibold transition-colors"
                   style={{ borderColor: PINK, color: BODY }}
                   onMouseEnter={(e) => {
-                    e.target.style.borderColor = RED
-                    e.target.style.color = RED
+                    e.currentTarget.style.borderColor = RED
+                    e.currentTarget.style.color = RED
                   }}
                   onMouseLeave={(e) => {
-                    e.target.style.borderColor = PINK
-                    e.target.style.color = BODY
+                    e.currentTarget.style.borderColor = PINK
+                    e.currentTarget.style.color = BODY
                   }}
                 >
                   See Services
@@ -586,8 +586,8 @@ function App() {
                     type="submit"
                     className="w-full text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group"
                     style={{ background: GRADIENT }}
-                    onMouseEnter={(e) => (e.target.style.background = GRADIENT_HOVER)}
-                    onMouseLeave={(e) => (e.target.style.background = GRADIENT)}
+                    onMouseEnter={(e) => (e.currentTarget.style.background = GRADIENT_HOVER)}
+                    onMouseLeave={(e) => (e.currentTarget.style.background = GRADIENT)}
                   >
                     <Download className="mr-2 w-5 h-5" />
                     Download Free Guide
@@ -776,8 +776,8 @@ function App() {
                       type="submit"
                       className="text-white px-12 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group min-w-[200px]"
                       style={{ background: GRADIENT }}
-                      onMouseEnter={(e) => (e.target.style.background = GRADIENT_HOVER)}
-                      onMouseLeave={(e) => (e.target.style.background = GRADIENT)}
+                      onMouseEnter={(e) => (e.currentTarget.style.background = GRADIENT_HOVER)}
+                      onMouseLeave={(e) => (e.currentTarget.style.background = GRADIENT)}
                     >
                       {CTA_LABEL}
                       <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -801,11 +801,11 @@ function App() {
                       border: '1px solid rgba(255,255,255,0.3)',
                     }}
                     onMouseEnter={(e) =>
-                      (e.target.style.background =
+                      (e.currentTarget.style.background =
                         'linear-gradient(135deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.2) 100%)')
                     }
                     onMouseLeave={(e) =>
-                      (e.target.style.background =
+                      (e.currentTarget.style.background =
                         'linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%)')
                     }
                   >
@@ -889,8 +889,8 @@ function App() {
                 rel="noopener noreferrer"
                 className="transition-colors"
                 style={{ color: PINK }}
-                onMouseEnter={(e) => (e.target.style.color = RED)}
-                onMouseLeave={(e) => (e.target.style.color = PINK)}
+                onMouseEnter={(e) => (e.currentTarget.style.color = RED)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = PINK)}
               >
                 LinkedIn
               </a>
@@ -898,8 +898,8 @@ function App() {
                 href="mailto:hello@tinapeng.ca"
                 className="transition-colors"
                 style={{ color: PINK }}
-                onMouseEnter={(e) => (e.target.style.color = RED)}
-                onMouseLeave={(e) => (e.target.style.color = PINK)}
+                onMouseEnter={(e) => (e.currentTarget.style.color = RED)}
+                onMouseLeave={(e) => (e.currentTarget.style.color = PINK)}
               >
                 Email
               </a>
