@@ -153,7 +153,7 @@ const employers = [
 ]
 
 const aboutParagraphs = [
-  "I'm a fractional marketing leader with 15+ years of experience helping technology companies position and take complex products to market. I've worked with startup founders and enterprise teams across AI, SaaS, defence, healthcare, education, and other specialized markets and I've led multi-product portfolios worth more than $300M.",
+  "I'm a fractional marketing leader with 15+ years of experience helping technology companies position and take complex products to market. I've worked with startup founders and enterprise teams across AI, SaaS, defence, healthcare, education, and other specialized markets, and I've led multi-product portfolios worth more than $300M.",
   'I bring together the strategic thinking of a product marketer with the senior leadership needed to turn that thinking into action. My work spans ICP definition, positioning and differentiation, buyer messaging, sales enablement, launches, and repeatable go-to-market strategy. I hold an MBA from UBC, with international study at Yale, Hitotsubashi ICS, and WU Vienna.',
   "If you're working through positioning, go-to-market, or how to turn scattered marketing into a focused plan, let's talk.",
 ]
