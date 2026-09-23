@@ -33,35 +33,35 @@ const GRADIENT_HOVER = `linear-gradient(135deg, ${DARK_RED} 0%, ${RED} 100%)`
 const services = [
   {
     icon: <Target className="w-8 h-8" />,
-    title: 'Marketing Assessment & Plan',
+    title: 'Marketing Assessment & Strategy',
     description:
-      "Find out what's working, what isn't, and where to focus next.",
+      'Get clear on your market, buyer, competitive landscape, and where marketing can have the greatest impact.',
     features: [
-      'Marketing audit with clear priorities',
-      'Competitive analysis',
-      '12-month plan with measurable milestones',
+      'Marketing audit and assessment',
+      'Competitive and alternative analysis',
+      'Focused strategy with clear priorities and milestones',
     ],
   },
   {
     icon: <MessageSquare className="w-8 h-8" />,
     title: 'Positioning & Messaging',
     description:
-      "Help buyers quickly see what you do, who it's for, and why you're the right choice.",
+      'Make complex products easier for specialized buyers to understand, evaluate, and choose.',
     features: [
-      'Ideal customer profile',
+      'Ideal customer profile (ICP) and buying process',
       'Differentiation from competitors and alternatives',
-      'Buyer-focused messaging',
+      'Buyer-focused positioning and messaging',
     ],
   },
   {
     icon: <TrendingUp className="w-8 h-8" />,
     title: 'Go-to-Market Strategy & Execution',
     description:
-      'Reach the right buyers and help your sales team move long, complex deals forward.',
+      'Build a focused, repeatable go-to-market approach around how your buyers actually make decisions.',
     features: [
-      'A go-to-market approach you can repeat',
+      'Go-to-market strategy and priorities',
       'Content and campaign plan',
-      'Sales tools and training',
+      'Sales enablement and launch support',
     ],
   },
 ]
@@ -69,15 +69,15 @@ const services = [
 const challenges = [
   {
     title: 'Buyers struggle to see your value',
-    text: 'Your product is strong, but prospects have trouble understanding what it does and why it matters to them.',
+    text: 'Your product solves a real problem, but its complexity makes the value difficult to communicate to the people who need to buy it.',
   },
   {
     title: 'Deals take too long',
-    text: 'Sales cycles are long, and marketing is not giving your sales team what it needs to move deals forward.',
+    text: 'Multiple stakeholders, specialized buyers, and long sales cycles make it harder to build momentum and move deals forward.',
   },
   {
     title: 'Marketing feels scattered',
-    text: 'There is plenty of activity, but no clear plan tying it to revenue goals.',
+    text: `You're already "doing marketing", but the team lacks a clear understanding of who to target, what to say, and where to focus.`,
   },
 ]
 
@@ -91,19 +91,19 @@ const heroProof = [
 const guideHighlights = [
   {
     title: 'Strategic Framework',
-    text: 'Connect positioning, go-to-market, and growth in one plan',
+    text: 'Connect your positioning, buyers, and go-to-market strategy',
   },
   {
     title: 'Key Metrics',
-    text: 'Customer acquisition cost, lifetime value, retention, and channel results',
+    text: 'Focus on the metrics that matter for your growth model',
   },
   {
     title: 'Channel Tactics',
-    text: 'Content, SEO, paid ads, email, and more',
+    text: 'Choose the channels and tactics that fit your buyers',
   },
   {
     title: 'Step-by-Step Roadmap',
-    text: 'A 30, 90, and 180-day plan to put it into practice',
+    text: 'A practical roadmap for turning strategy into action',
   },
 ]
 
@@ -153,8 +153,8 @@ const employers = [
 ]
 
 const aboutParagraphs = [
-  "I'm a fractional marketing leader with 15+ years of experience helping technology companies turn complex products into clear positioning, effective go-to-market strategies, and commercial growth. I've worked with startup founders and enterprise teams at companies including Sage, one45, Norsat and Kodak, and led multi-product portfolios worth more than $300M.",
-  'I partner with growing companies to define their ideal customer profiles, sharpen positioning and differentiation, develop buyer-focused messaging, and build repeatable go-to-market motions. I hold an MBA from UBC, with international study at Yale, Hitotsubashi ICS, and WU Vienna.',
+  "I'm a fractional marketing leader with 15+ years of experience helping technology companies position and take complex products to market. I've worked with startup founders and enterprise teams across AI, SaaS, defence, healthcare, education, and other specialized markets and I've led multi-product portfolios worth more than $300M.",
+  'I bring together the strategic thinking of a product marketer with the senior leadership needed to turn that thinking into action. My work spans ICP definition, positioning and differentiation, buyer messaging, sales enablement, launches, and repeatable go-to-market strategy. I hold an MBA from UBC, with international study at Yale, Hitotsubashi ICS, and WU Vienna.',
   "If you're working through positioning, go-to-market, or how to turn scattered marketing into a focused plan, let's talk.",
 ]
 
@@ -455,7 +455,7 @@ function App() {
               When companies bring me in
             </h2>
             <p className="text-xl max-w-3xl mx-auto" style={{ color: BODY }}>
-              I help technology companies fix the gap between a strong product and the way the market sees it.
+              I help technology companies make complex products easier to understand, differentiate, and sell.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -478,10 +478,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: INK }}>
-              Fractional Marketing Services
+              How I Help
             </h2>
             <p className="text-xl max-w-3xl mx-auto" style={{ color: BODY }}>
-              Senior marketing leadership, part time. Three ways to work together.
+              Focused marketing leadership for complex products and niche markets.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -533,7 +533,7 @@ function App() {
                 The B2B Go-to-Market Playbook
               </h2>
               <p className="text-xl mb-8 leading-relaxed" style={{ color: BODY }}>
-                A free guide to building a clear, practical go-to-market plan.
+                A practical guide to turning your positioning, buyers, and marketing priorities into a focused go-to-market plan.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 {guideHighlights.map((item) => (
@@ -632,7 +632,7 @@ function App() {
                 Where I've Worked
               </h2>
               <p className="text-lg max-w-2xl mx-auto" style={{ color: BODY }}>
-                15+ years of product launch and growth experience at global B2B technology companies.
+                15+ years of product marketing, positioning, and go-to-market experience across complex B2B technology products.
               </p>
             </div>
             <ul className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-4xl mx-auto">
