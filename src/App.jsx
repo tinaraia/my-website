@@ -69,7 +69,7 @@ const services = [
 const challenges = [
   {
     title: 'Buyers struggle to see your value',
-    text: 'Your product solves a real problem, but its complexity makes the value difficult to communicate to the people who need to buy it.',
+    text: 'Your product solves a real problem, but its complexity makes the value difficult to communicate to your target buyers.',
   },
   {
     title: 'Deals take too long',
