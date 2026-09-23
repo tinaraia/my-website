@@ -382,13 +382,13 @@ function App() {
                 Fractional Marketing Leader
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight" style={{ color: INK }}>
-                Clear positioning and go-to-market strategy
+                Go-to-market clarity
                 <span
                   className="text-transparent bg-clip-text"
                   style={{ backgroundImage: GRADIENT, WebkitBackgroundClip: 'text' }}
                 >
                   {' '}
-                  for technology companies
+                  for tech companies
                 </span>
               </h1>
               <p className="mt-6 text-xl leading-relaxed" style={{ color: BODY }}>
