@@ -35,9 +35,9 @@ const services = [
     icon: <Target className="w-8 h-8" />,
     title: 'Marketing Assessment & Plan',
     description:
-      "A review of what's working, what's not, and where to focus next, with a plan tied to your growth targets.",
+      "Find out what's working, what isn't, and where to focus next.",
     features: [
-      'Marketing audit with clear recommendations',
+      'Marketing audit with clear priorities',
       'Competitive analysis',
       '12-month plan with measurable milestones',
     ],
@@ -46,9 +46,9 @@ const services = [
     icon: <MessageSquare className="w-8 h-8" />,
     title: 'Positioning & Messaging',
     description:
-      'Clear positioning that tells buyers what you do, who it is for, and why it matters.',
+      "Help buyers quickly see what you do, who it's for, and why you're the right choice.",
     features: [
-      'Ideal customer profile (ICP)',
+      'Ideal customer profile',
       'Differentiation from competitors and alternatives',
       'Buyer-focused messaging',
     ],
@@ -57,12 +57,27 @@ const services = [
     icon: <TrendingUp className="w-8 h-8" />,
     title: 'Go-to-Market Strategy & Execution',
     description:
-      'A focused plan to reach the right buyers and support your sales team through long, complex deals.',
+      'Reach the right buyers and help your sales team move long, complex deals forward.',
     features: [
-      'Repeatable go-to-market motion',
+      'A go-to-market approach you can repeat',
       'Content and campaign plan',
-      'Sales enablement',
+      'Sales tools and training',
     ],
+  },
+]
+
+const challenges = [
+  {
+    title: 'Buyers struggle to see your value',
+    text: 'Your product is strong, but prospects have trouble understanding what it does and why it matters to them.',
+  },
+  {
+    title: 'Deals take too long',
+    text: 'Sales cycles are long, and marketing is not giving your sales team what it needs to move deals forward.',
+  },
+  {
+    title: 'Marketing feels scattered',
+    text: 'There is plenty of activity, but no clear plan tying it to revenue goals.',
   },
 ]
 
@@ -76,19 +91,19 @@ const heroProof = [
 const guideHighlights = [
   {
     title: 'Strategic Framework',
-    text: 'Align positioning, go-to-market, and long-term growth in one model',
+    text: 'Connect positioning, go-to-market, and growth in one plan',
   },
   {
-    title: 'Growth Benchmarks',
-    text: 'Understand CAC, LTV, retention, and channel performance',
+    title: 'Key Metrics',
+    text: 'Customer acquisition cost, lifetime value, retention, and channel results',
   },
   {
-    title: 'Channel-Specific Growth Tactics',
-    text: 'Practical guidance for content, SEO, paid ads, email, and more',
+    title: 'Channel Tactics',
+    text: 'Content, SEO, paid ads, email, and more',
   },
   {
     title: 'Step-by-Step Roadmap',
-    text: 'Use the 30/90/180-day plan to build, scale, and improve your marketing',
+    text: 'A 30, 90, and 180-day plan to put it into practice',
   },
 ]
 
@@ -146,7 +161,7 @@ const aboutParagraphs = [
 const navItems = [
   { id: 'home', label: 'Home' },
   { id: 'services', label: 'Services' },
-  { id: 'resources', label: 'Resources' },
+  { id: 'resources', label: 'Free Guide' },
   { id: 'about', label: 'About' },
 ]
 
@@ -404,7 +419,7 @@ function App() {
                     e.target.style.color = BODY
                   }}
                 >
-                  Explore Services
+                  See Services
                 </button>
               </div>
               <ul className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
@@ -432,6 +447,32 @@ function App() {
         </div>
       </section>
 
+      {/* Challenges */}
+      <section id="challenges" className="py-20" style={{ backgroundColor: BLUSH }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: INK }}>
+              When companies bring me in
+            </h2>
+            <p className="text-xl max-w-3xl mx-auto" style={{ color: BODY }}>
+              I help technology companies fix the gap between a strong product and the way the market sees it.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {challenges.map((item) => (
+              <div key={item.title} className="bg-white rounded-xl p-8 shadow-sm border-t-4" style={{ borderColor: RED }}>
+                <h3 className="text-xl font-semibold mb-3" style={{ color: INK }}>
+                  {item.title}
+                </h3>
+                <p className="leading-relaxed" style={{ color: BODY }}>
+                  {item.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Services */}
       <section id="services" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -440,7 +481,7 @@ function App() {
               Fractional Marketing Services
             </h2>
             <p className="text-xl max-w-3xl mx-auto" style={{ color: BODY }}>
-              Hands-on marketing leadership tailored to your goals, buyers, and sales cycle.
+              Senior marketing leadership, part time. Three ways to work together.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -492,7 +533,7 @@ function App() {
                 The B2B Go-to-Market Playbook
               </h2>
               <p className="text-xl mb-8 leading-relaxed" style={{ color: BODY }}>
-                A free guide for technology leaders who want a clear, practical plan for growth.
+                A free guide to building a clear, practical go-to-market plan.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 {guideHighlights.map((item) => (
@@ -522,7 +563,7 @@ function App() {
                   <h3 className="text-2xl font-bold mb-2" style={{ color: INK }}>
                     Download Your Free Guide
                   </h3>
-                  <p style={{ color: BODY }}>Get instant access to practical B2B go-to-market strategies</p>
+                  <p style={{ color: BODY }}>Enter your email. The download starts right away.</p>
                 </div>
                 <form onSubmit={handlePdfDownload} className="space-y-4">
                   <div>
@@ -664,9 +705,6 @@ function App() {
           <div className="lg:grid lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-7">
               <div className="bg-white rounded-2xl p-8 md:p-12 shadow-2xl">
-                <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center lg:text-left" style={{ color: INK }}>
-                  Get in Touch
-                </h3>
                 <form onSubmit={handleSubmit} className="space-y-8">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div>
@@ -719,7 +757,7 @@ function App() {
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium mb-2" style={{ color: BODY }}>
-                      Tell me about your marketing needs *
+                      What are you working on? *
                     </label>
                     <textarea
                       id="message"
@@ -730,7 +768,7 @@ function App() {
                       required
                       className={`${inputClass} resize-none`}
                       style={ringStyle}
-                      placeholder="Describe your current marketing challenges, goals, or what you'd like to discuss..."
+                      placeholder="For example: a product launch, a new market, or positioning that isn't landing with buyers"
                     />
                   </div>
                   <div className="flex justify-center lg:justify-start">
@@ -752,9 +790,9 @@ function App() {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <h3 className="text-xl font-bold text-white mb-6">Not sure if you're ready for fractional support?</h3>
                 <p className="text-white/90 mb-6 leading-relaxed">
-                  Get the free guide to see which marketing strategies your business can start using today.
+                  Start with the free guide. It covers the basics of a strong go-to-market plan.
                 </p>
-                <div className="mb-6">
+                <div>
                   <button
                     onClick={() => scrollToSection('resources')}
                     className="w-full text-white px-6 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center group"
@@ -776,10 +814,6 @@ function App() {
                     <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>
-                <p className="text-white/70 text-sm leading-relaxed">
-                  Practical steps to find gaps, spot opportunities, and decide what kind of marketing leadership you
-                  need.
-                </p>
               </div>
             </div>
           </div>
@@ -794,7 +828,7 @@ function App() {
                   >
                     <Users className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="font-semibold text-white mb-2">Connect with Me</h4>
+                  <h4 className="font-semibold text-white mb-2">LinkedIn</h4>
                   <a
                     href="https://www.linkedin.com/in/tinapeng/"
                     target="_blank"
@@ -811,7 +845,7 @@ function App() {
                   >
                     <Mail className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="font-semibold text-white mb-2">Send me an Email</h4>
+                  <h4 className="font-semibold text-white mb-2">Email</h4>
                   <a
                     href="mailto:hello@tinapeng.ca"
                     className="text-white/80 hover:text-white transition-colors underline decoration-white/40 hover:decoration-white"
@@ -826,8 +860,8 @@ function App() {
                   >
                     <MapPin className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="font-semibold text-white mb-2">Based in Vancouver, BC</h4>
-                  <p className="text-white/60 text-sm mt-1">Pacific Time</p>
+                  <h4 className="font-semibold text-white mb-2">Location</h4>
+                  <p className="text-white/80">Vancouver, BC · Pacific Time</p>
                 </div>
               </div>
             </div>
