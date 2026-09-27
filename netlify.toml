@@ -4,3 +4,9 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# The previous guide was replaced. Send old links to the current guide.
+[[redirects]]
+  from = "/Your-Fractional-Fit-The-SaaS-Leaders-Guide-to-Smarter-Marketing-Strat.pdf"
+  to = "/Is-Your-GTM-Built-for-a-Complex-Market.pdf"
+  status = 301

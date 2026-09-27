@@ -90,20 +90,20 @@ const heroProof = [
 
 const guideHighlights = [
   {
-    title: 'Strategic Framework',
-    text: 'Connect your positioning, buyers, and go-to-market strategy',
+    title: 'The Complex-Market Test',
+    text: 'Check whether your market needs a different go-to-market approach',
   },
   {
-    title: 'Key Metrics',
-    text: 'Focus on the metrics that matter for your growth model',
+    title: 'Seven Diagnostic Areas',
+    text: 'From demand signals and buying committees to procurement and positioning',
   },
   {
-    title: 'Channel Tactics',
-    text: 'Choose the channels and tactics that fit your buyers',
+    title: 'Examples From the Field',
+    text: 'Lessons from go-to-market work in specialized technology markets',
   },
   {
-    title: 'Step-by-Step Roadmap',
-    text: 'A practical roadmap for turning strategy into action',
+    title: 'Scorecard and 90-Day Plan',
+    text: 'Find your biggest gaps and decide what to fix first',
   },
 ]
 
@@ -226,7 +226,7 @@ function App() {
       from_name: pdfFormData.name,
       from_email: pdfFormData.email,
       company: pdfFormData.company,
-      message: 'User downloaded the B2B SaaS Marketing Playbook PDF',
+      message: 'User downloaded the Is Your GTM Built for a Complex Market? guide',
       to_email: 'hello@tinapeng.ca',
     }
     emailjs
@@ -234,11 +234,11 @@ function App() {
       .then((response) => {
         console.log('PDF download notification sent successfully!', response.status, response.text)
         const downloadUrl =
-          'https://tinapeng.ca/Your-Fractional-Fit-The-SaaS-Leaders-Guide-to-Smarter-Marketing-Strat.pdf'
+          'https://tinapeng.ca/Is-Your-GTM-Built-for-a-Complex-Market.pdf'
         setTimeout(() => {
           const downloadLink = document.createElement('a')
           downloadLink.href = downloadUrl
-          downloadLink.download = 'B2B-SaaS-Marketing-Playbook.pdf'
+          downloadLink.download = 'Is-Your-GTM-Built-for-a-Complex-Market.pdf'
           document.body.appendChild(downloadLink)
           downloadLink.click()
           document.body.removeChild(downloadLink)
@@ -253,11 +253,11 @@ function App() {
       .catch((error) => {
         console.error('Failed to send PDF download notification:', error)
         const downloadUrl =
-          'https://tinapeng.ca/Your-Fractional-Fit-The-SaaS-Leaders-Guide-to-Smarter-Marketing-Strat.pdf'
+          'https://tinapeng.ca/Is-Your-GTM-Built-for-a-Complex-Market.pdf'
         setTimeout(() => {
           const downloadLink = document.createElement('a')
           downloadLink.href = downloadUrl
-          downloadLink.download = 'B2B-SaaS-Marketing-Playbook.pdf'
+          downloadLink.download = 'Is-Your-GTM-Built-for-a-Complex-Market.pdf'
           document.body.appendChild(downloadLink)
           downloadLink.click()
           document.body.removeChild(downloadLink)
@@ -530,10 +530,10 @@ function App() {
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6" style={{ color: INK }}>
-                The B2B Go-to-Market Playbook
+                Is Your GTM Built for a Complex Market?
               </h2>
               <p className="text-xl mb-8 leading-relaxed" style={{ color: BODY }}>
-                A practical guide to turning your positioning, buyers, and marketing priorities into a focused go-to-market plan.
+                A practical diagnostic for technology companies entering, repositioning in, or growing within specialized markets.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 {guideHighlights.map((item) => (
@@ -790,7 +790,7 @@ function App() {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
                 <h3 className="text-xl font-bold text-white mb-6">Not sure if you're ready for fractional support?</h3>
                 <p className="text-white/90 mb-6 leading-relaxed">
-                  Start with the free guide. It covers the basics of a strong go-to-market plan.
+                  Start with the free guide. Its scorecard shows where your go-to-market plan has the biggest gaps.
                 </p>
                 <div>
                   <button
