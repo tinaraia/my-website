@@ -110,18 +110,21 @@ const guideHighlights = [
 const testimonials = [
   {
     name: 'Adam F.',
+    title: 'Founder',
     company: 'Moonlite Labs',
     content:
       "Tina's guidance during the launch of our generative-AI platform, Moonlite Labs, was tremendously helpful. Her ability to quickly understand the product, ideal customers, and adapt to new insights set us up for a strong strategic foundation for future growth. She's professional, experienced, and works great in a team environment. Timely, organized, and knows what she's doing.",
   },
   {
     name: 'Brett Z.',
+    title: 'Entrepreneur-in-Residence',
     company: 'North Forge',
     content:
       "Tina is an outstanding strategic partner. Working quickly to understand our needs, even the ones we hadn't fully articulated. Her B2B experience came through in every decision, helping us avoid wasted effort and focus on what mattered most. She delivered work that made a real difference to our project.",
   },
   {
     name: 'Chang L.',
+    title: 'Founder & CEO',
     company: 'Plenish',
     content:
       "It's refreshing to work with a marketer who excels at both strategy and execution. Tina stays on top of the latest AI tools and trends, and she gave us a tailored, realistic plan that fit our goals and internal capacity perfectly.",
@@ -619,7 +622,7 @@ function App() {
                     {testimonial.name}
                   </p>
                   <p className="text-sm" style={{ color: BODY }}>
-                    {testimonial.company}
+                    {testimonial.title}, {testimonial.company}
                   </p>
                 </figcaption>
               </figure>
